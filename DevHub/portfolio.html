@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>DevHub</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="todo.html">Todo</a>
+                <a href="products.html">Products</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I am a driven B.Tech 2nd-year student at Gokaraju Rangaraju Institute of Engineering and Technology, passionate about software development, full-stack technologies, and innovative problem-solving.</p>
+                <p>I thrive in collaborative environments and actively seek opportunities to apply and enhance my skills in web development, app development, and AI.</p>
+                <div class="contact-info">
+                    <p>📞 8985151525</p>
+                    <p>📧 poreddysaikiran6@gmail.com</p>
+                    <p>🔗 <a href="https://www.linkedin.com/in/sai-kiran-reddy-poreddy-17bb502a1/" target="_blank">LinkedIn Profile</a></p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/400x400" alt="Profile Image" class="profile-image">
+            </div>
+        </section>
+
+        <section class="projects-section" id="projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A responsive web application built with modern technologies.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Mobile app development using React Native.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>AI-powered data analysis tool.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-primary">View Demo</a>
+                        <a href="#" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm" onsubmit="return validateForm(this)">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <div class="theme-toggle" title="Toggle Dark Mode">🌓</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

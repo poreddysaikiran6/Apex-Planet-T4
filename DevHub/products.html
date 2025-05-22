@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevHub - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1>DevHub</h1>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="todo.html">Todo</a>
+                <a href="products.html">Products</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="products-container">
+            <h2>Product Explorer</h2>
+            
+            <div class="filters-section">
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                </div>
+
+                <div class="category-filters">
+                    <label>
+                        <input type="checkbox" name="category" value="mobile"> Mobile Phones
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="headphones"> Headphones
+                    </label>
+                    <label>
+                        <input type="checkbox" name="category" value="cars"> Cars
+                    </label>
+                </div>
+
+                <div class="sort-options">
+                    <select id="sortSelect">
+                        <option value="name">Sort by Name</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Rating</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="productsGrid" class="products-grid">
+                <!-- Product cards will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <div class="theme-toggle" title="Toggle Dark Mode">🌓</div>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
